@@ -112,29 +112,29 @@
 
 		<hr class=" border-gray-100/30 dark:border-gray-850/30" />
 
-		{#if $config?.license_metadata}
-			<div class="mb-2 text-xs">
-				{#if !$WEBUI_NAME.includes('Open WebUI')}
-					<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
-				{/if}
+			{#if $config?.license_metadata}
+				<div class="mb-2 text-xs">
+					{#if !$WEBUI_NAME.includes('Open Arena')}
+						<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
+					{/if}
 
-				<span class=" capitalize">{$config?.license_metadata?.type}</span> license purchased by
-				<span class=" capitalize">{$config?.license_metadata?.organization_name}</span>
-			</div>
-		{:else}
-			<div class="flex space-x-1">
-				<a href="https://discord.gg/5rJgQTnV4s" target="_blank">
-					<img
-						alt="Discord"
-						src="https://img.shields.io/badge/Discord-Open_WebUI-blue?logo=discord&logoColor=white"
-					/>
-				</a>
+					<span class=" capitalize">{$config?.license_metadata?.type}</span> license purchased by
+					<span class=" capitalize">{$config?.license_metadata?.organization_name}</span>
+				</div>
+			{:else}
+				<div class="flex space-x-1">
+					<a href="https://discord.gg/5rJgQTnV4s" target="_blank">
+						<img
+							alt="Discord"
+							src="https://img.shields.io/badge/Discord-Open_Arena-blue?logo=discord&logoColor=white"
+						/>
+					</a>
 
-				<a href="https://twitter.com/OpenWebUI" target="_blank">
-					<img
-						alt="X (formerly Twitter) Follow"
-						src="https://img.shields.io/twitter/follow/OpenWebUI"
-					/>
+					<a href="https://twitter.com/OpenArena" target="_blank">
+						<img
+							alt="X (formerly Twitter) Follow"
+							src="https://img.shields.io/twitter/follow/OpenArena"
+						/>
 				</a>
 
 				<a href="https://github.com/open-webui/open-webui" target="_blank">

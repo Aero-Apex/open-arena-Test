@@ -288,10 +288,10 @@
 					} else {
 						return e.name;
 					}
-				}, '')} • Open WebUI</title
-		>
-	{:else}
-		<title>#{channel?.name ?? 'Channel'} • Open WebUI</title>
+					}, '')} • Open Arena</title
+			>
+		{:else}
+			<title>#{channel?.name ?? 'Channel'} • Open Arena</title>
 	{/if}
 </svelte:head>
 

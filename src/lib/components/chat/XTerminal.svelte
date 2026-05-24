@@ -29,7 +29,7 @@
 		const systemTerminals = ($terminalServers ?? []).filter((t: any) => t.id);
 		const systemMatch = systemTerminals.find((t: any) => t.id === $selectedTerminalId);
 		if (systemMatch) {
-			// For system terminals, WS goes through the Open WebUI backend proxy
+			// For system terminals, WS goes through the Open Arena backend proxy
 			return { serverId: systemMatch.id, baseUrl: WEBUI_API_BASE_URL };
 		}
 
